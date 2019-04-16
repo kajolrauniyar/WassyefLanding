@@ -1,0 +1,40 @@
+header {
+     padding: 20px 0;
+     box-shadow: 0px 3px 6px rgba(#000, 0.05);
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     background-color: #fff;
+     z-index: 99;
+     transition: all 0.3s ease-in-out;
+
+     &.sticky {
+          padding: 5px 0px;
+
+          .wassyefNav__contact {
+               display: none;
+          }
+          .navbar-brand img {
+               transition: all 0.3s ease-in-out;
+
+              @include breakpoint(980) {
+                width: 100px;
+              }
+           }
+     }
+}
+.register-btn {
+     position: fixed;
+     right: -97px;
+     z-index: 999;
+     top: 50%;
+     display: none;
+}
+.register-btn a {
+     display: inline-block;
+     padding: 5px 20px;
+     background-color: #00647f;
+     color: #fff;
+     transform: rotateZ(-90deg);
+ }
